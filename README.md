@@ -1,5 +1,19 @@
 reference:https://blog.csdn.net/aliceyangxi1987/article/details/73420844
 
+我自己在ubuntu上运行完，内存报了个错，应该是机器的问题，忽略：
+Epoch  598
+Epoch  599
+Traceback (most recent call last):
+  File "train.py", line 77, in <module>
+    incorrect = sess.run(error,{data: test_input, target: test_output})
+  File "/home/wqu/.local/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 900, in run
+    run_metadata_ptr)
+  File "/home/wqu/.local/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1104, in _run
+    np_val = np.asarray(subfeed_val, dtype=subfeed_dtype)
+  File "/home/wqu/.local/lib/python2.7/site-packages/numpy/core/numeric.py", line 492, in asarray
+    return array(a, dtype, copy=False, order=order)
+MemoryError
+    
 用一个简单的例子来看看 LSTM 在 tensorflow 里是如何做分类问题的。
 
 这个例子特别简单，就是一个长度为 20 的二进制串，数出其中 1 的个数，简单到用一个 for 就能搞定的事情，来看看 LSTM 是如何做到的。
