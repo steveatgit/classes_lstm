@@ -1,3 +1,5 @@
+reference:https://blog.csdn.net/aliceyangxi1987/article/details/73420844
+
 用一个简单的例子来看看 LSTM 在 tensorflow 里是如何做分类问题的。
 
 这个例子特别简单，就是一个长度为 20 的二进制串，数出其中 1 的个数，简单到用一个 for 就能搞定的事情，来看看 LSTM 是如何做到的。
